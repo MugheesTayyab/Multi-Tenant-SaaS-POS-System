@@ -357,6 +357,8 @@
         .table-responsive {
             width: 100%;
             overflow-x: auto;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
         }
 
         table {
@@ -367,17 +369,24 @@
 
         th {
             padding: 16px;
-            border-bottom: 1px solid var(--border-color);
+            background-color: var(--card-inner-bg);
+            border-bottom: 1.5px solid var(--border-color);
             color: var(--text-secondary);
-            font-size: 13px;
-            font-weight: 600;
+            font-size: 12px;
+            font-weight: 700;
             text-transform: uppercase;
+            letter-spacing: 0.05em;
         }
 
         td {
             padding: 16px;
             border-bottom: 1px solid var(--border-color);
             font-size: 14px;
+            color: var(--text-primary);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
         }
 
         tr:hover td {
