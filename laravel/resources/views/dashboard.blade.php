@@ -396,15 +396,25 @@
         .badge {
             display: inline-flex;
             align-items: center;
-            padding: 4px 8px;
-            border-radius: 6px;
+            gap: 6px;
+            padding: 4px 10px;
+            border-radius: 99px;
             font-size: 12px;
             font-weight: 600;
         }
 
-        .badge-success { background-color: rgba(16, 185, 129, 0.15); color: var(--success); }
-        .badge-warning { background-color: rgba(245, 158, 11, 0.15); color: var(--warning); }
-        .badge-danger { background-color: rgba(239, 68, 68, 0.15); color: var(--danger); }
+        .badge::before {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: currentColor;
+        }
+
+        .badge-success { background-color: rgba(16, 185, 129, 0.12); color: var(--success); }
+        .badge-warning { background-color: rgba(245, 158, 11, 0.12); color: var(--warning); }
+        .badge-danger { background-color: rgba(239, 68, 68, 0.12); color: var(--danger); }
 
         /* --- VIEW VIEWS CONTROLLERS --- */
         .view-pane {
