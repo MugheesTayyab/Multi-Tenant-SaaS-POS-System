@@ -160,6 +160,11 @@
             justify-content: center;
             font-weight: 800;
             color: #fff;
+            transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .brand:hover .brand-icon {
+            transform: scale(1.1) rotate(10deg);
         }
 
         .brand-name {
