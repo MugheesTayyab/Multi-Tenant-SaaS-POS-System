@@ -212,6 +212,14 @@
             border-radius: 99px;
         }
 
+        .nav-item {
+            transition: transform 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .nav-item:active {
+            transform: scale(0.95);
+        }
+
         .nav-footer {
             border-top: 1px solid var(--border-color);
             padding-top: 16px;
