@@ -245,17 +245,28 @@
             font-size: 14px;
             cursor: pointer;
             border: none;
-            transition: all 0.2s ease;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
             text-decoration: none;
+        }
+
+        .btn:active {
+            transform: scale(0.96);
         }
 
         .btn-primary {
             background-color: var(--primary);
             color: #fff;
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.15);
         }
 
         .btn-primary:hover {
             background-color: var(--primary-hover);
+            box-shadow: 0 6px 16px rgba(99, 102, 241, 0.25);
+            transform: translateY(-1px);
+        }
+
+        .btn-primary:active {
+            transform: scale(0.96) translateY(0);
         }
 
         .btn-secondary {
