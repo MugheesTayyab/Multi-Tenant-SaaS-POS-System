@@ -341,6 +341,22 @@
             border-color: rgba(99, 102, 241, 0.25);
         }
 
+        .grid-4 .card {
+            position: relative;
+            overflow: hidden;
+            border-top: 4px solid transparent;
+        }
+
+        .grid-4 .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary) 0%, #a855f7 100%);
+        }
+
         .metric-title {
             font-size: 14px;
             color: var(--text-secondary);
