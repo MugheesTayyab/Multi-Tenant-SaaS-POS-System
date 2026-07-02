@@ -91,14 +91,14 @@
         }
 
         .auth-card {
-            background: rgba(17, 24, 39, 0.7);
-            backdrop-filter: var(--glass-blur);
-            border: 1px solid var(--border-color);
+            background: rgba(15, 23, 42, 0.35);
+            backdrop-filter: blur(20px) saturate(120%);
+            border: 1px solid rgba(255, 255, 255, 0.08);
             border-radius: 24px;
             padding: 40px;
             width: 100%;
             max-width: 440px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
             animation: fadeInUp 0.6s ease;
         }
 
