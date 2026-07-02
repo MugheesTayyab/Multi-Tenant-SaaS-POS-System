@@ -416,6 +416,14 @@
         .badge-warning { background-color: rgba(245, 158, 11, 0.12); color: var(--warning); }
         .badge-danger { background-color: rgba(239, 68, 68, 0.12); color: var(--danger); }
 
+        #drawer-status-chip {
+            padding: 6px 14px;
+            font-size: 13px;
+            letter-spacing: 0.01em;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
         /* --- VIEW VIEWS CONTROLLERS --- */
         .view-pane {
             display: none;
