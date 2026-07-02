@@ -214,6 +214,8 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            background-image: radial-gradient(var(--border-color) 1px, transparent 1px);
+            background-size: 24px 24px;
         }
 
         header {
