@@ -305,12 +305,13 @@
             color: var(--text-primary);
             font-size: 14px;
             outline: none;
-            transition: all 0.2s ease;
+            transition: border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .form-control:focus {
             border-color: var(--primary);
-            box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+            background-color: var(--card-bg);
         }
 
         /* --- CARDS & GRID LAYOUTS --- */
