@@ -191,13 +191,25 @@
             border-radius: 12px;
             font-size: 15px;
             font-weight: 500;
-            transition: all 0.2s ease;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
         }
 
         .nav-item.active a, .nav-item a:hover {
             color: var(--text-primary);
-            background-color: rgba(99, 102, 241, 0.15);
-            box-shadow: inset 3px 0 0 var(--primary);
+            background-color: rgba(99, 102, 241, 0.1);
+            padding-left: 22px;
+        }
+
+        .nav-item.active a::before {
+            content: "";
+            position: absolute;
+            left: 6px;
+            top: 25%;
+            height: 50%;
+            width: 4px;
+            background-color: var(--primary);
+            border-radius: 99px;
         }
 
         .nav-footer {
