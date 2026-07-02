@@ -564,7 +564,8 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0,0,0,0.6);
+            background-color: rgba(15, 23, 42, 0.4);
+            backdrop-filter: blur(4px);
             z-index: 200;
             align-items: center;
             justify-content: center;
@@ -581,8 +582,8 @@
             width: 100%;
             max-width: 500px;
             padding: 32px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            animation: scaleIn 0.3s ease;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            animation: scaleIn 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
         }
 
         /* --- NOTIFICATION CHIP --- */
