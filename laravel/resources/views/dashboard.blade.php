@@ -32,10 +32,10 @@
         }
 
         [data-theme="dark"] {
-            --bg-color: #1e293b;
-            --sidebar-bg: #0f172a;
-            --card-bg: rgba(15, 23, 42, 0.45);
-            --border-color: rgba(255, 255, 255, 0.09);
+            --bg-color: #0b0f19;
+            --sidebar-bg: #05070c;
+            --card-bg: rgba(15, 23, 42, 0.6);
+            --border-color: rgba(255, 255, 255, 0.08);
             --text-primary: #f8fafc;
             --text-secondary: #94a3b8;
             --primary: #6366f1;
@@ -43,9 +43,9 @@
             --success: #10b981;
             --warning: #f59e0b;
             --danger: #ef4444;
-            --form-bg: rgba(255, 255, 255, 0.05);
+            --form-bg: rgba(15, 23, 42, 0.7);
             --row-hover: rgba(255, 255, 255, 0.02);
-            --card-inner-bg: rgba(255, 255, 255, 0.03);
+            --card-inner-bg: rgba(255, 255, 255, 0.02);
         }
 
         * {
