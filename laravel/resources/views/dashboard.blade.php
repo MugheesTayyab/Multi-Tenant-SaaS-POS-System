@@ -424,6 +424,31 @@
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
+        @keyframes scan-laser {
+            0% { top: 0%; }
+            50% { top: 100%; }
+            100% { top: 0%; }
+        }
+        .scanner-hud {
+            position: relative;
+            overflow: hidden;
+        }
+        .scanner-hud::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: rgba(239, 68, 68, 0.8);
+            box-shadow: 0 0 8px rgba(239, 68, 68, 0.8);
+            animation: scan-laser 2s infinite linear;
+            pointer-events: none;
+            display: none;
+        }
+        .scanner-hud.active::after {
+            display: block;
+        }
+
         /* --- VIEW VIEWS CONTROLLERS --- */
         .view-pane {
             display: none;
@@ -2317,6 +2342,10 @@
         }
 
         function simulateBarcodeScan() {
+            const searchBox = document.getElementById('pos-search-input').parentElement;
+            searchBox.classList.add('scanner-hud', 'active');
+            setTimeout(() => searchBox.classList.remove('active'), 2500);
+
             const barcode = prompt("Type variant barcode (e.g. BAR123) to simulate scanner input:");
             if (barcode) lookupProductPOS(barcode);
         }
