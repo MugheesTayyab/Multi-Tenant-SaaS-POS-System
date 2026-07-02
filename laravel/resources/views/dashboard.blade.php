@@ -534,19 +534,22 @@
         }
 
         .toast {
-            background: rgba(17, 24, 39, 0.9);
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(8px);
             color: #fff;
             padding: 16px 24px;
             border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.3), 0 8px 10px -6px rgba(0,0,0,0.3);
             border-left: 4px solid var(--primary);
             min-width: 280px;
-            animation: slideInRight 0.3s ease;
+            animation: slideInRight 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            font-size: 14px;
+            font-weight: 500;
         }
 
-        .toast.success { border-left-color: var(--success); }
-        .toast.danger { border-left-color: var(--danger); }
-        .toast.warning { border-left-color: var(--warning); }
+        .toast.success { border-left-color: var(--success); box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.1); }
+        .toast.danger { border-left-color: var(--danger); box-shadow: 0 10px 25px -5px rgba(239, 68, 68, 0.1); }
+        .toast.warning { border-left-color: var(--warning); box-shadow: 0 10px 25px -5px rgba(245, 158, 11, 0.1); }
 
         /* --- ANIMATIONS --- */
         @keyframes fadeInUp {
