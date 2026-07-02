@@ -487,6 +487,12 @@
             background-size: 18px 18px;
         }
 
+        #reports-view .card {
+            border: 1px solid var(--border-color);
+            background: linear-gradient(135deg, var(--card-bg) 0%, rgba(99, 102, 241, 0.03) 100%);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
+        }
+
         /* --- VIEW VIEWS CONTROLLERS --- */
         .view-pane {
             display: none;
